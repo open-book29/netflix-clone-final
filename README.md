@@ -1,40 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Creating a Fullstack App with Next.js and Prisma Netflix Clone
 
+  <img width="1434" alt="270152998-60c591b5-3d65-4b39-93e6-6d2bfba317d1" src="https://github.com/open-book29/netflix-clone-final/assets/128271574/b26c23dd-4a6f-431b-acbb-fd442ce2c92f">
+  
 ## Getting Started
+  
+ -  [Next.js](https://nextjs.org/) - npx create-next-app@latest --typescript --tailwind
+-  [Prisma](https://www.prisma.io/)
+   -  npm install prisma -D (ORM Database)
+   -  npx prisma init (Create prisma folder)
+   -  npx prisma db push (Create database)
+-  [Prisma Client](https://www.prisma.io/docs/concepts/components/prisma-client)
+   -  npm install @prisma/client (Prisma Client)
+   -  npx prisma generate (Generate Prisma Client)
+-  [Next Auth](https://next-auth.js.org/) - npm install next-auth
+-  [Bcrypt](https://www.npmjs.com/package/bcrypt) - npm install bcrypt && npm install @types/bcrypt -D
+-  [@Next-Auth/Prisma-Adapter](https://next-auth.js.org/adapters/prisma) - npm install @next-auth/prisma-adapter
+-  [Axios](https://www.npmjs.com/package/axios) - npm install axios
+-  [React Icons](https://react-icons.github.io/react-icons/) - npm install react-icons
+-  [SWR](https://swr.vercel.app/) - npm install swr
+-  [Lodash](https://lodash.com/) - npm install lodash && npm install -D @types/lodash (utilities library)
+-  [Heroicons](https://github.com/tailwindlabs/heroicons) - npm install @heroicons/react@latest
+-  [Zustand](https://zustand-demo.pmnd.rs/) - npm install zustand@latest (state management)
 
-First, run the development server:
+  ## Integrated
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+-  For github open developer setting
+-  for google open google cloud console -> api & services -> credentials
+-  For google don't forget add `http://localhost:3000/api/auth/callback/google` in Authorized redirect URIs
+
+## env
+
+```javascript
+DATABASE_URL=""
+NEXTAUTH_JWT_SECRET=""
+NEXTAUTH_SECRET=""
+
+# buka github developer oauth lu
+GITHUB_ID=
+GITHUB_SECRET=
+
+# buka console google lu
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Package Install
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-  use `npm install --legacy-peer-deps` if you get error
+-  delete old package.lock.json and node_modules
