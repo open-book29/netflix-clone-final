@@ -18,6 +18,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'download.blender.org',
       },
+      {
+        protocol: 'https',
+        hostname: 'i.pinimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'drive.google.com',
+      },
     ],
   },
 }
