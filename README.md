@@ -35,11 +35,11 @@ DATABASE_URL=""
 NEXTAUTH_JWT_SECRET=""
 NEXTAUTH_SECRET=""
 
-# buka github developer oauth lu
+# Open your GitHub developer OAuth
 GITHUB_ID=
 GITHUB_SECRET=
 
-# buka console google lu
+# Open your console google
 GOOGLE_CLIENT_ID=
 GOOGLE_CLIENT_SECRET=
 ```
